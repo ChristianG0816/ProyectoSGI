@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 //agregamos roles, permisos y base de datos de spatie
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
-use Iluminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 
 class RolController extends Controller
 {
