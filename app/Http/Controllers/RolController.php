@@ -14,11 +14,13 @@ class RolController extends Controller
 
     function __construct(){
         //Definición de permisos
-        $this->middleware('permission::ver-rol|crear-rol|editar-rol|borrar-rol',['only'=>['index']]);
-        $this->middleware('permission::crear-rol',['only'=>['create','store']]);
-        $this->middleware('permission::editar-rol',['only'=>['edit','update']]);
-        $this->middleware('permission::borrar-rol',['only'=>['destroy']]);
+        $this->middleware('permission:ver-rol|crear-rol|editar-rol|borrar-rol',['only'=>['index']]);
+        $this->middleware('permission:crear-rol',['only'=>['create','store']]);
+        $this->middleware('permission:editar-rol',['only'=>['edit','update']]);
+        $this->middleware('permission:borrar-rol',['only'=>['destroy']]);
     }
+
+    
 
     /**
      * Display a listing of the resource.
@@ -54,7 +56,7 @@ class RolController extends Controller
         $this->validate($request, ['name'=>'required', 'permission'=>'required']);
         //llamara al input de la plantilla de crear de los roles
         $role = Role::create(['name'=> $request->input('name')]);
-        $role->syncPermission($request->input('permission'));
+        $role->syncPermissions($request->input('permission'));
 
         return redirect()->route('roles.index');
     }
