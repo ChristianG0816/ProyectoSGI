@@ -13,6 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        //Aqui corremos todas las semillas del proyecto
+        $this->call([SeederTablaPermisos::class]);
+        $this->call([SuperAdminSeeder::class]);
     }
 }
