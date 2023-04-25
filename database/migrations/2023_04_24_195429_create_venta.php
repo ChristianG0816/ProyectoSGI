@@ -13,11 +13,11 @@ class CreateVenta extends Migration
      */
     public function up()
     {
-        Schema::create('venta', function (Blueprint $table) {
+        Schema::create('ventas', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('id');
-            $table->foreignId('id_servicio')->constrained('servicio')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreignId('id_empleado')->constrained('empleado')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('id_servicios')->constrained('servicios')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('id_empleados')->constrained('empleados')->onDelete('cascade')->onUpdate('cascade');
             $table->date('fecha_Venta');
             $table->integer('cantidad_Venta');
             $table->float('neto_Venta',8,2);

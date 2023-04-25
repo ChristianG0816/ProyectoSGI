@@ -13,7 +13,7 @@ class CreateProveedor extends Migration
      */
     public function up()
     {
-        Schema::create('proveedor', function (Blueprint $table) {
+        Schema::create('proveedors', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('id');
             $table->string('nombre_Proveedor', 100);

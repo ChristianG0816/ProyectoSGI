@@ -13,7 +13,7 @@ class CreateBitacora extends Migration
      */
     public function up()
     {
-        Schema::create('bitacora', function (Blueprint $table) {
+        Schema::create('bitacoras', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('id');
             $table->foreignId('id_users')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
