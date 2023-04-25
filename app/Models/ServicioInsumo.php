@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ServicioInsumo extends Model
 {
     use HasFactory;
+    public $timestamps = false;
     protected $fillable = [
         'id_insumo',
         'id_proveedor',

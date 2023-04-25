@@ -16,5 +16,6 @@ class DatabaseSeeder extends Seeder
         //Aqui corremos todas las semillas del proyecto
         $this->call([SeederTablaPermisos::class]);
         $this->call([SuperAdminSeeder::class]);
+        $this->call([DatosPruebaSeeder::class]);
     }
 }

@@ -13,10 +13,10 @@ class CreateServicioInsumo extends Migration
      */
     public function up()
     {
-        Schema::create('servicio_insumo', function (Blueprint $table) {
-            $table->foreignId('id_insumo')->constrained('insumo')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreignId('id_proveedor')->constrained('proveedor')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreignId('id_servicio')->constrained('servicio')->onDelete('cascade')->onUpdate('cascade');
+        Schema::create('servicio_insumos', function (Blueprint $table) {
+            $table->foreignId('id_insumos')->constrained('insumos')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('id_proveedors')->constrained('proveedors')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('id_servicios')->constrained('servicios')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

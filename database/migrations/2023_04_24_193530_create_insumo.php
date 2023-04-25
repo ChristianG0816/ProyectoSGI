@@ -13,10 +13,10 @@ class CreateInsumo extends Migration
      */
     public function up()
     {
-        Schema::create('insumo', function (Blueprint $table) {
+        Schema::create('insumos', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('id');
-            $table->foreignId('id_proveedor')->constrained('proveedor')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('id_proveedors')->constrained('proveedors')->onDelete('cascade')->onUpdate('cascade');
             $table->string('nombre_Insumo', 100);
             $table->float('costo_Unitario_Insumo',8,2);   
             $table->timestamps();
