@@ -3,7 +3,7 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h3 class="page__heading">Usuarios</h3>
+            <h3 class="page__heading">Bitácora</h3>
         </div>
         <div class="section-body">
             <div class="row">
@@ -17,7 +17,7 @@
 
                             <!--Se muestran los usuarios de la db-->
                             <table class="table table-striped mt-2">
-                                <thead style="background: #667080;">
+                                <thead style="background: #6777ef;">
                                     <th style="display: none;">ID</th>
                                     <th style="color:#fff;">Nombre</th>
                                     <th style="color:#fff;">Correo</th>

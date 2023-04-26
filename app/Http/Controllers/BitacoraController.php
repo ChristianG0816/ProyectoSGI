@@ -24,7 +24,7 @@ class BitacoraController extends Controller
      */
     public function create()
     {
-        //
+        return view('bitacora.index', compact('bitacora'));
     }
 
     /**

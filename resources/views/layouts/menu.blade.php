@@ -10,5 +10,8 @@
     <a class="nav-link" href="/roles">
         <i class=" fas fa-building"></i><span>Roles</span>
     </a>
+    <a class="nav-link" href="/bitacora">
+        <i class=" fas fa-building"></i><span>Bitácora</span>
+    </a>
 
 </li>

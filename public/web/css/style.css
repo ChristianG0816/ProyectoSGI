@@ -2112,7 +2112,7 @@ h6 .badge {
 }
 
 .navbar.active {
-    background-color: #6777ef;
+    background-color: #000;
     box-shadow: rgba(103, 119, 239, 0.2) rgba(0, 0, 0, 0.03);
 }
 
@@ -2129,6 +2129,7 @@ h6 .badge {
 
 .navbar {
     align-items: center;
+    background-color: #005323;
 }
 
 .navbar .navbar-brand {
@@ -3403,7 +3404,7 @@ pre {
     top: 0;
     height: 100%;
     width: 250px;
-    background-color: #fff;
+    background-color: #EEF1F4;
     z-index: 880;
     left: 0;
 }
@@ -3799,8 +3800,9 @@ body.layout-3 .main-footer {
     display: inline-block;
     width: 100%;
     text-align: center;
-    height: 60px;
+    height: 65px;
     line-height: 60px;
+    padding: 10px;
 }
 
 .main-sidebar .sidebar-brand.sidebar-brand-sm {
@@ -3839,6 +3841,7 @@ body.layout-3 .main-footer {
 
 .main-sidebar .sidebar-menu li {
     display: block;
+    padding: 10px;
 }
 
 .main-sidebar .sidebar-menu li.menu-header {
@@ -3888,9 +3891,9 @@ body.layout-3 .main-footer {
 }
 
 .main-sidebar .sidebar-menu li.active a {
-    color: #6777ef;
-    font-weight: 600;
-    background-color: #f8fafb;
+    color: #353C47;
+    font-weight:bolder;
+    background-color: transparent;
 }
 
 .main-sidebar .sidebar-menu li.active a.has-dropdown:after {
