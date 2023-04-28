@@ -34,5 +34,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
+
+    /*Bitacora*/
     Route::resource('bitacora', BitacoraController::class);
 });

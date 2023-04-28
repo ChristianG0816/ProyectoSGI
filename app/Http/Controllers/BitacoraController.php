@@ -14,7 +14,8 @@ class BitacoraController extends Controller
      */
     public function index()
     {
-        //
+        $bitacoras = Bitacora::orderBy('hora_accion', 'desc')->get();
+        return view('bitacora.index')->with('bitacoras', $bitacoras);
     }
 
     /**
@@ -24,7 +25,7 @@ class BitacoraController extends Controller
      */
     public function create()
     {
-        return view('bitacora.index', compact('bitacora'));
+
     }
 
     /**
